@@ -1,5 +1,5 @@
 $(function() {
-    console.log( "ready!" );
+    // console.log( "ready!" );
 
     $('.fa-bars').click(function(){
       // console.log('clicked nav!');
@@ -9,5 +9,18 @@ $(function() {
       // console.log('clicked close!');
       $(".mobile-nav").animate({left:-220});
     });
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 
 });
