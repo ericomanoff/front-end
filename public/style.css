@@ -1,0 +1,123 @@
+.btn {
+    background: #60c257;
+    background: -moz-linear-gradient(top, #60c257 0%, #52bb48 50%, #4fba45 51%, #40ab36 100%);
+    background: -webkit-linear-gradient(top, #60c257 0%,#52bb48 50%,#4fba45 51%,#40ab36 100%);
+    background: linear-gradient(to bottom, #60c257 0%,#52bb48 50%,#4fba45 51%,#40ab36 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60c257', endColorstr='#40ab36',GradientType=0 );
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+.btn:hover{
+background: #40ab36; /* Old browsers */
+background: -moz-linear-gradient(top,  #40ab36 0%, #4fba45 49%, #52bb48 50%, #60c257 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #40ab36 0%,#4fba45 49%,#52bb48 50%,#60c257 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #40ab36 0%,#4fba45 49%,#52bb48 50%,#60c257 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ab36', endColorstr='#60c257',GradientType=0 ); /* IE6-9 */
+color: #fff;
+}
+
+.btn-hollow {
+    border: 1px solid #4eb944;
+    background: transparent;
+}
+
+.btn-hollow:hover {
+    border: 1px solid #4eb944;
+    background: #4eb944;
+    color: #fff
+}
+
+body{
+  background: url('./assets/hero-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+/*********header**********/
+
+nav{
+  text-transform: uppercase;
+  color: #fff;
+  padding: 40px 0px;
+}
+
+nav a{
+  color: #fff;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus{
+  color: #4eb944;
+  text-decoration: none;
+}
+
+.main-nav,
+.nav-btns{
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+
+.main-nav {
+    padding: 11px 0px;
+    font-size: 15px;
+}
+
+.main-nav li,
+.nav-btns li{
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.fa.fa-bars {
+    font-size: 30px;
+}
+.fa-bars:hover{
+  cursor: pointer;
+}
+
+.fa.fa-phone {
+    font-size: 33px;
+    margin-top: 2px;
+}
+
+.mobile-nav {
+    padding: 20px 5px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: -220px;
+    background-color: #000;
+    width: 220px;
+}
+
+.mobile-nav ul{
+  list-style: none;
+}
+
+.mobile-nav a{
+  color: rgba(255,255,255,.75);
+}
+
+.mobile-nav a:hover{
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+}
+
+.fa-window-close-o{
+  color: #fff;
+  float: right;
+}
+.fa-window-close-o:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 991px){
+  .header-logo{
+    display: block;
+    margin: 0 auto;
+  }
+}
