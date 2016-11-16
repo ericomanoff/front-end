@@ -125,6 +125,10 @@ nav a:focus{
   color: rgba(255,255,255,1);
 }
 
+ul.mobile-menu {
+    padding-left: 15px;
+}
+
 .fa-window-close-o{
   color: #fff;
   float: right;
@@ -349,7 +353,7 @@ footer a:hover{
     padding: 95px 0px;
   }
   .hero-content {
-    height: 100px;
+    height: 78px;
   }
 
   .nav-btns{
@@ -363,6 +367,10 @@ footer a:hover{
 }
 
 @media (max-width:767px) {
+
+  .main-cta .btn {
+    width: 250px;
+  }
 
   footer .main-nav {
     text-align: center;;
